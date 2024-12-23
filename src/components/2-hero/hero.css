@@ -1,0 +1,110 @@
+/* ===========================
+table of contents
+==============================
+
+1. Header Design
+2. Typing Animation 
+3. Right Section ==> animation
+4. Responseve Design (media query)
+*/
+
+/* 
+=========================
+  1.Left Section
+=========================
+*/
+section.hero {
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+
+section.hero .parent-avatar.flex {
+  align-items: end;
+  gap: 0.6rem;
+}
+
+section.hero .left-section {
+  flex-grow: 1;
+}
+
+section.hero .icon-verified {
+  color: var(--blue);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+section.hero img.avatar {
+  width: 88px;
+  border-radius: 50%;
+  border: 2px solid #ffffffe0;
+  padding: 0.8px;
+  box-shadow: 1px 1px 40px rgb(203, 200, 200, 0.8) inset;
+}
+
+section.hero h1.title {
+  font-size: 2.5rem;
+  line-height: 2.3rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: var(--title);
+}
+
+/* 
+=========================
+  2.Typing Animation 
+=========================
+*/
+
+section.hero .txt {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #5F42B7;
+  white-space: nowrap;
+}
+
+
+section.hero p.sub-title {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  line-height: 1.65rem;
+  margin-bottom: 32px;
+}
+
+section.hero .all-icons.flex {
+  font-size: 1.3rem;
+  gap: 1.5rem;
+  color: var(--subtitle);
+}
+
+section.hero .all-icons.flex .icon:hover {
+  font-size: 1.4rem;
+  transition: 0.1s;
+  cursor: pointer;
+  color: var(--icon-hover);
+}
+
+/* 
+=================================
+  3.Right Section ==> animation
+=================================
+*/
+
+section.right-section.animation {
+  width: 100%;
+  translate: 100px 55px;
+}
+
+
+
+/*
+========================================
+  4.Responseve Design (media query)
+========================================
+*/
+
+
+@media (max-width: 1250px) {
+  section.right-section .responsiveDesignAnimation {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+
+footer.flex {
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+footer.flex p.subtitle {
+  color: var(--subtitle);
+}
+
+
+/*
+==========================
+  2.Responseve Design
+========================== 
+*/
+@media (max-width: 800px) {
+  footer.flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
